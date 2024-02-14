@@ -21,13 +21,14 @@ noButton.addEventListener("click", function () {
     resizeYesButton();
     updateNoButtonText();
     if (noCount === MAX_IMAGES) {
-      play = false;
+      noCount = 0;
     }
   }
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! :3";
+  play = false;
+  titleElement.innerHTML = "Yayyy!! <3 Thank youuuu!";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
